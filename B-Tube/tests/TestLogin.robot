@@ -9,11 +9,11 @@ Suite Teardown  Close browser
 *** Variables ***
 
 *** Test Cases ***
-Go To homePage
+TEST succesful signin
     Go To homePage
+    succesfull login process
 
-Navigate to login screen
-    Click On Signin Button
+
 
 
 

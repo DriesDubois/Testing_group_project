@@ -11,4 +11,4 @@ ${LOGO}=  xpath://*[@id="Logo"]
 
 Go To homePage
     go to  ${HOMEPAGE}
-    wait until element is visible  ${LOGO}  10
+    sleep  6
