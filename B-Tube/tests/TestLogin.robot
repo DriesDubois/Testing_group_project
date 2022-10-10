@@ -13,6 +13,22 @@ TEST succesful signin
     Go To homePage
     succesfull login process
 
+Test login without password
+    Go To homePage
+    logout of account
+    click on signin button
+    fill in mail adress
+    click on login button
+    page should contain element  xpath://*[@id="SignInButton"]
+    sleep  3
+
+Test login with wrong mailaddress
+    Go To homePage
+    Unsuccesfull login process with wrong mail
+
+Test login with unregistered mailaddress
+    Go To homePage
+    Unsuccesfull login process with unregistered mail
 
 
 
