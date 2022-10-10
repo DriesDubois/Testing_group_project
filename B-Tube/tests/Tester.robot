@@ -1,5 +1,6 @@
 *** Settings ***
 Resource            ../pageObjects/basePage.robot
+Resource            ../pageObjects/homePage.robot
 
 Suite Setup  Open My Website
 Suite Teardown  Close browser
@@ -10,3 +11,4 @@ Suite Teardown  Close browser
 
 Hello World
     Log  Hello World!
+
