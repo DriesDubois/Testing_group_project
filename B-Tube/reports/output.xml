@@ -1,43 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221010 10:29:38.272" rpa="false" schemaversion="3">
-<suite id="s1" name="Tests" source="C:\Users\dries\Documents\School\Testing_group_project\B-Tube\tests">
-<suite id="s1-s1" name="Tester" source="C:\Users\dries\Documents\School\Testing_group_project\B-Tube\tests\Tester.robot">
+<robot generator="Robot 5.0.1 (Python 3.9.6 on win32)" generated="20221030 16:51:06.890" rpa="false" schemaversion="3">
+<suite id="s1" name="Unautherized" source="C:\Users\seppe\OneDrive - Thomas More\testing\B-Tube\tests\unautherized.robot">
 <kw name="Open My Website" library="basePage" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221010 10:29:38.599" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
-<status status="PASS" starttime="20221010 10:29:38.598" endtime="20221010 10:29:40.407"/>
+<msg timestamp="20221030 16:51:07.179" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221030 16:51:07.178" endtime="20221030 16:51:09.223"/>
 </kw>
-<status status="PASS" starttime="20221010 10:29:38.598" endtime="20221010 10:29:40.407"/>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221030 16:51:09.224" endtime="20221030 16:51:09.358"/>
 </kw>
-<test id="s1-s1-t1" name="Hello World" line="12">
-<kw name="Log" library="BuiltIn">
-<arg>Hello World!</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20221010 10:29:40.408" level="INFO">Hello World!</msg>
-<status status="PASS" starttime="20221010 10:29:40.408" endtime="20221010 10:29:40.408"/>
+<status status="PASS" starttime="20221030 16:51:07.178" endtime="20221030 16:51:09.359"/>
 </kw>
-<status status="PASS" starttime="20221010 10:29:40.407" endtime="20221010 10:29:40.408"/>
+<test id="s1-t1" name="Test movie opening" line="17">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:51:14.361" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:51:09.360" endtime="20221030 16:51:14.361"/>
+</kw>
+<kw name="click on movie" library="unautherizedHomePage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:51:19.363" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:51:14.362" endtime="20221030 16:51:19.363"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MOVIE_POSTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221030 16:51:19.363" endtime="20221030 16:51:19.383"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MOVIE_POSTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221030 16:51:19.383" level="INFO">Clicking element 'xpath://*[@id="551804"]'.</msg>
+<status status="PASS" starttime="20221030 16:51:19.383" endtime="20221030 16:51:19.432"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:14.362" endtime="20221030 16:51:19.432"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221030 16:51:19.432" endtime="20221030 16:51:21.594"/>
+</kw>
+<tag>MyTag</tag>
+<status status="PASS" starttime="20221030 16:51:09.359" endtime="20221030 16:51:21.595"/>
+</test>
+<test id="s1-t2" name="Search movie" line="23">
+<kw name="Open My Website" library="basePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221030 16:51:21.599" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221030 16:51:21.599" endtime="20221030 16:51:23.718"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221030 16:51:23.718" endtime="20221030 16:51:23.840"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:21.598" endtime="20221030 16:51:23.840"/>
+</kw>
+<kw name="search movie" library="unautherizedHomePage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:51:28.843" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:51:23.841" endtime="20221030 16:51:28.843"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221030 16:51:28.843" endtime="20221030 16:51:28.877"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SEARCHBAR}</arg>
+<arg>freaky</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221030 16:51:28.877" level="INFO">Typing text 'freaky' into text field '//*[@class="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"]'.</msg>
+<status status="PASS" starttime="20221030 16:51:28.877" endtime="20221030 16:51:29.034"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:51:34.035" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:51:29.034" endtime="20221030 16:51:34.035"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:23.841" endtime="20221030 16:51:34.036"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221030 16:51:34.036" endtime="20221030 16:51:36.195"/>
+</kw>
+<tag>MyTag</tag>
+<status status="PASS" starttime="20221030 16:51:21.596" endtime="20221030 16:51:36.196"/>
+</test>
+<test id="s1-t3" name="Signin works" line="28">
+<kw name="Open My Website" library="basePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221030 16:51:36.200" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221030 16:51:36.199" endtime="20221030 16:51:38.245"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221030 16:51:38.246" endtime="20221030 16:51:38.368"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:36.198" endtime="20221030 16:51:38.368"/>
+</kw>
+<kw name="click on signin" library="unautherizedHomePage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:51:43.370" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:51:38.370" endtime="20221030 16:51:43.371"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="RegisterButton"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221030 16:51:43.371" endtime="20221030 16:51:43.407"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="RegisterButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221030 16:51:43.407" level="INFO">Clicking element '//*[@id="RegisterButton"]'.</msg>
+<status status="PASS" starttime="20221030 16:51:43.407" endtime="20221030 16:51:43.546"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:38.369" endtime="20221030 16:51:43.547"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221030 16:51:43.547" endtime="20221030 16:51:45.685"/>
+</kw>
+<tag>MyTag</tag>
+<status status="PASS" starttime="20221030 16:51:36.197" endtime="20221030 16:51:45.685"/>
+</test>
+<test id="s1-t4" name="login works" line="33">
+<kw name="Open My Website" library="basePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221030 16:51:45.688" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221030 16:51:45.688" endtime="20221030 16:51:47.721"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221030 16:51:47.721" endtime="20221030 16:51:47.839"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:45.687" endtime="20221030 16:51:47.840"/>
+</kw>
+<kw name="click on login" library="unautherizedHomePage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:51:52.841" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:51:47.840" endtime="20221030 16:51:52.841"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="SignInButton"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221030 16:51:52.842" endtime="20221030 16:51:52.868"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="SignInButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221030 16:51:52.868" level="INFO">Clicking element '//*[@id="SignInButton"]'.</msg>
+<status status="PASS" starttime="20221030 16:51:52.868" endtime="20221030 16:51:53.045"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:47.840" endtime="20221030 16:51:53.045"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221030 16:51:53.046" endtime="20221030 16:51:55.236"/>
+</kw>
+<tag>MyTag</tag>
+<status status="PASS" starttime="20221030 16:51:45.686" endtime="20221030 16:51:55.237"/>
+</test>
+<test id="s1-t5" name="click on external link" line="39">
+<kw name="Open My Website" library="basePage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221030 16:51:55.241" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221030 16:51:55.240" endtime="20221030 16:51:57.277"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221030 16:51:57.278" endtime="20221030 16:51:57.397"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:55.239" endtime="20221030 16:51:57.397"/>
+</kw>
+<kw name="go to external link" library="unautherizedHomePage">
+<kw name="click on movie" library="unautherizedHomePage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:52:02.399" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:51:57.398" endtime="20221030 16:52:02.399"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MOVIE_POSTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221030 16:52:02.399" endtime="20221030 16:52:02.426"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MOVIE_POSTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221030 16:52:02.427" level="INFO">Clicking element 'xpath://*[@id="551804"]'.</msg>
+<status status="PASS" starttime="20221030 16:52:02.426" endtime="20221030 16:52:02.536"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:57.398" endtime="20221030 16:52:02.536"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221030 16:52:07.538" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221030 16:52:02.536" endtime="20221030 16:52:07.538"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/div[2]/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221030 16:52:07.538" endtime="20221030 16:52:07.556"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221030 16:52:07.556" level="INFO">Clicking element '//*[@id="root"]/div/div[2]/div[1]/div[2]/div/div[2]/div[2]/div[2]/a'.</msg>
+<status status="PASS" starttime="20221030 16:52:07.556" endtime="20221030 16:52:07.631"/>
+</kw>
+<status status="PASS" starttime="20221030 16:51:57.398" endtime="20221030 16:52:07.631"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221030 16:52:07.631" endtime="20221030 16:52:09.843"/>
+</kw>
+<tag>MyTag</tag>
+<status status="PASS" starttime="20221030 16:51:55.238" endtime="20221030 16:52:09.844"/>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221010 10:29:40.409" endtime="20221010 10:29:42.500"/>
+<status status="PASS" starttime="20221030 16:52:09.845" endtime="20221030 16:52:09.845"/>
 </kw>
-<status status="PASS" starttime="20221010 10:29:38.296" endtime="20221010 10:29:42.500"/>
-</suite>
-<status status="PASS" starttime="20221010 10:29:38.273" endtime="20221010 10:29:42.501"/>
+<status status="PASS" starttime="20221030 16:51:06.893" endtime="20221030 16:52:09.845"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="5" fail="0" skip="0">MyTag</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tester">Tests.Tester</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="Unautherized">Unautherized</stat>
 </suite>
 </statistics>
 <errors>
