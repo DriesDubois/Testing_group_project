@@ -11,4 +11,4 @@ ${LOGO}=  xpath://*[@id="Logo"]
 
 Go To homePage
     go to  ${HOMEPAGE}
-    sleep  6
+    sleep  6s

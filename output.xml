@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221101 15:02:54.647" rpa="false" schemaversion="3">
+<suite id="s1" name="Unautherized" source="C:\Users\inese\IdeaProjects\Testing_group_project\B-Tube\tests\unautherized.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221101 15:02:54.901" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<msg timestamp="20221101 15:02:58.162" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221101 15:02:58.164" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0076ACD3+2075859]
+	Ordinal0 [0x006FEE61+1633889]
+	Ordinal0 [0x005FB7BD+571325]
+	Ordinal0 [0x0061DFCD+712653]
+	Ordinal0 [0x00619266+692838]
+	Ordinal0 [0x00616BE9+682985]
+	Ordinal0 [0x0064DBD3+908243]
+	Ordinal0 [0x0064D6AA+906922]
+	Ordinal0 [0x00647136+880950]
+	Ordinal0 [0x0061FEFD+720637]
+	Ordinal0 [0x00620F3F+724799]
+	GetHandleVerifier [0x00A1EED2+2769538]
+	GetHandleVerifier [0x00A10D95+2711877]
+	GetHandleVerifier [0x007FA03A+521194]
+	GetHandleVerifier [0x007F8DA0+516432]
+	Ordinal0 [0x0070682C+1665068]
+	Ordinal0 [0x0070B128+1683752]
+	Ordinal0 [0x0070B215+1683989]
+	Ordinal0 [0x00716484+1729668]
+	BaseThreadInitThunk [0x7603FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F77B2E+238]
+</msg>
+<status status="FAIL" starttime="20221101 15:02:54.901" endtime="20221101 15:02:58.166"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20221101 15:02:58.167" endtime="20221101 15:02:58.167"/>
+</kw>
+<status status="FAIL" starttime="20221101 15:02:54.901" endtime="20221101 15:02:58.167"/>
+</kw>
+<test id="s1-t1" name="Test movie opening" line="17">
+<tag>MyTag</tag>
+<status status="FAIL" starttime="20221101 15:02:58.167" endtime="20221101 15:02:58.169">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0076ACD3+2075859]
+	Ordinal0 [0x006FEE61+1633889]
+	Ordinal0 [0x005FB7BD+571325]
+	Ordinal0 [0x0061DFCD+712653]
+	Ordinal0 [0x00619266+692838]
+	Ordinal0 [0x00616BE9+682985]
+	Ordinal0 [0x0064DBD3+908243]
+	Ordinal0 [0x0064D6AA+906922]
+	Ordinal0 [0x00647136+880950]
+	Ordinal0 [0x0061FEFD+720637]
+	Ordinal0 [0x00620F3F+724799]
+	GetHandleVerifier [0x00A1EED2+2769538]
+	GetHandleVerifier [0x00A10D95+2711877]
+	GetHandleVerifier [0x007FA03A+521194]
+	GetHandleVerifier [0x007F8DA0+516432]
+	Ordinal0 [0x0070682C+1665068]
+	Ordinal0 [0x0070B128+1683752]
+	Ordinal0 [0x0070B215+1683989]
+	Ordinal0 [0x00716484+1729668]
+	BaseThreadInitThunk [0x7603FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F77B2E+238]
+</status>
+</test>
+<test id="s1-t2" name="Search movie" line="23">
+<tag>MyTag</tag>
+<status status="FAIL" starttime="20221101 15:02:58.170" endtime="20221101 15:02:58.171">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0076ACD3+2075859]
+	Ordinal0 [0x006FEE61+1633889]
+	Ordinal0 [0x005FB7BD+571325]
+	Ordinal0 [0x0061DFCD+712653]
+	Ordinal0 [0x00619266+692838]
+	Ordinal0 [0x00616BE9+682985]
+	Ordinal0 [0x0064DBD3+908243]
+	Ordinal0 [0x0064D6AA+906922]
+	Ordinal0 [0x00647136+880950]
+	Ordinal0 [0x0061FEFD+720637]
+	Ordinal0 [0x00620F3F+724799]
+	GetHandleVerifier [0x00A1EED2+2769538]
+	GetHandleVerifier [0x00A10D95+2711877]
+	GetHandleVerifier [0x007FA03A+521194]
+	GetHandleVerifier [0x007F8DA0+516432]
+	Ordinal0 [0x0070682C+1665068]
+	Ordinal0 [0x0070B128+1683752]
+	Ordinal0 [0x0070B215+1683989]
+	Ordinal0 [0x00716484+1729668]
+	BaseThreadInitThunk [0x7603FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F77B2E+238]
+</status>
+</test>
+<test id="s1-t3" name="Signin works" line="28">
+<tag>MyTag</tag>
+<status status="FAIL" starttime="20221101 15:02:58.173" endtime="20221101 15:02:58.174">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0076ACD3+2075859]
+	Ordinal0 [0x006FEE61+1633889]
+	Ordinal0 [0x005FB7BD+571325]
+	Ordinal0 [0x0061DFCD+712653]
+	Ordinal0 [0x00619266+692838]
+	Ordinal0 [0x00616BE9+682985]
+	Ordinal0 [0x0064DBD3+908243]
+	Ordinal0 [0x0064D6AA+906922]
+	Ordinal0 [0x00647136+880950]
+	Ordinal0 [0x0061FEFD+720637]
+	Ordinal0 [0x00620F3F+724799]
+	GetHandleVerifier [0x00A1EED2+2769538]
+	GetHandleVerifier [0x00A10D95+2711877]
+	GetHandleVerifier [0x007FA03A+521194]
+	GetHandleVerifier [0x007F8DA0+516432]
+	Ordinal0 [0x0070682C+1665068]
+	Ordinal0 [0x0070B128+1683752]
+	Ordinal0 [0x0070B215+1683989]
+	Ordinal0 [0x00716484+1729668]
+	BaseThreadInitThunk [0x7603FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F77B2E+238]
+</status>
+</test>
+<test id="s1-t4" name="login works" line="33">
+<tag>MyTag</tag>
+<status status="FAIL" starttime="20221101 15:02:58.176" endtime="20221101 15:02:58.177">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0076ACD3+2075859]
+	Ordinal0 [0x006FEE61+1633889]
+	Ordinal0 [0x005FB7BD+571325]
+	Ordinal0 [0x0061DFCD+712653]
+	Ordinal0 [0x00619266+692838]
+	Ordinal0 [0x00616BE9+682985]
+	Ordinal0 [0x0064DBD3+908243]
+	Ordinal0 [0x0064D6AA+906922]
+	Ordinal0 [0x00647136+880950]
+	Ordinal0 [0x0061FEFD+720637]
+	Ordinal0 [0x00620F3F+724799]
+	GetHandleVerifier [0x00A1EED2+2769538]
+	GetHandleVerifier [0x00A10D95+2711877]
+	GetHandleVerifier [0x007FA03A+521194]
+	GetHandleVerifier [0x007F8DA0+516432]
+	Ordinal0 [0x0070682C+1665068]
+	Ordinal0 [0x0070B128+1683752]
+	Ordinal0 [0x0070B215+1683989]
+	Ordinal0 [0x00716484+1729668]
+	BaseThreadInitThunk [0x7603FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F77B2E+238]
+</status>
+</test>
+<test id="s1-t5" name="click on external link" line="39">
+<tag>MyTag</tag>
+<status status="FAIL" starttime="20221101 15:02:58.181" endtime="20221101 15:02:58.181">Parent suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0076ACD3+2075859]
+	Ordinal0 [0x006FEE61+1633889]
+	Ordinal0 [0x005FB7BD+571325]
+	Ordinal0 [0x0061DFCD+712653]
+	Ordinal0 [0x00619266+692838]
+	Ordinal0 [0x00616BE9+682985]
+	Ordinal0 [0x0064DBD3+908243]
+	Ordinal0 [0x0064D6AA+906922]
+	Ordinal0 [0x00647136+880950]
+	Ordinal0 [0x0061FEFD+720637]
+	Ordinal0 [0x00620F3F+724799]
+	GetHandleVerifier [0x00A1EED2+2769538]
+	GetHandleVerifier [0x00A10D95+2711877]
+	GetHandleVerifier [0x007FA03A+521194]
+	GetHandleVerifier [0x007F8DA0+516432]
+	Ordinal0 [0x0070682C+1665068]
+	Ordinal0 [0x0070B128+1683752]
+	Ordinal0 [0x0070B215+1683989]
+	Ordinal0 [0x00716484+1729668]
+	BaseThreadInitThunk [0x7603FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F77B2E+238]
+</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221101 15:02:58.183" endtime="20221101 15:02:58.183"/>
+</kw>
+<status status="FAIL" starttime="20221101 15:02:54.649" endtime="20221101 15:02:58.183">Suite setup failed:
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 107
+Current browser version is 106.0.5249.119 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0076ACD3+2075859]
+	Ordinal0 [0x006FEE61+1633889]
+	Ordinal0 [0x005FB7BD+571325]
+	Ordinal0 [0x0061DFCD+712653]
+	Ordinal0 [0x00619266+692838]
+	Ordinal0 [0x00616BE9+682985]
+	Ordinal0 [0x0064DBD3+908243]
+	Ordinal0 [0x0064D6AA+906922]
+	Ordinal0 [0x00647136+880950]
+	Ordinal0 [0x0061FEFD+720637]
+	Ordinal0 [0x00620F3F+724799]
+	GetHandleVerifier [0x00A1EED2+2769538]
+	GetHandleVerifier [0x00A10D95+2711877]
+	GetHandleVerifier [0x007FA03A+521194]
+	GetHandleVerifier [0x007F8DA0+516432]
+	Ordinal0 [0x0070682C+1665068]
+	Ordinal0 [0x0070B128+1683752]
+	Ordinal0 [0x0070B215+1683989]
+	Ordinal0 [0x00716484+1729668]
+	BaseThreadInitThunk [0x7603FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76F77B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x76F77B2E+238]
+</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="5" skip="0">MyTag</stat>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Unautherized">Unautherized</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -39,7 +39,7 @@ Succesfull login process
     click on login button
     wait until element is visible  xpath://*[@id="OrdersPageButton"]
     Page Should Contain Element  xpath://*[@id="OrdersPageButton"]
-    sleep  5
+    sleep  5s
 
 Unsuccesfull login process with wrong mail
     click on signin button
