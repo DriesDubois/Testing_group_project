@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221103 17:00:24.785" rpa="false" schemaversion="3">
+<suite id="s1" name="Authorized" source="C:\Users\inese\IdeaProjects\Testing_group_project\B-Tube\tests\authorized.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221103 17:00:25.048" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221103 17:00:25.048" endtime="20221103 17:00:27.089"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20221103 17:00:27.089" endtime="20221103 17:00:27.209"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:25.047" endtime="20221103 17:00:27.209"/>
+</kw>
+<test id="s1-t1" name="Test click on profile button" line="14">
+<kw name="Go To homePage" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOMEPAGE}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221103 17:00:27.211" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221103 17:00:27.211" endtime="20221103 17:00:27.316"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221103 17:00:33.321" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20221103 17:00:27.316" endtime="20221103 17:00:33.321"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:27.210" endtime="20221103 17:00:33.322"/>
+</kw>
+<kw name="Succesfull login process" library="loginPage">
+<kw name="Click On Signin Button" library="loginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:00:33.326" endtime="20221103 17:00:35.568"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:35.569" level="INFO">Clicking element 'xpath://*[@id="SignInButton"]'.</msg>
+<status status="PASS" starttime="20221103 17:00:35.568" endtime="20221103 17:00:35.649"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:33.324" endtime="20221103 17:00:35.649"/>
+</kw>
+<kw name="Fill in mail adress" library="loginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="SignInEmail"]</arg>
+<arg>dries.dubois@gmail.com</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:35.650" level="INFO">Typing text 'dries.dubois@gmail.com' into text field '//*[@id="SignInEmail"]'.</msg>
+<status status="PASS" starttime="20221103 17:00:35.650" endtime="20221103 17:00:35.810"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:35.649" endtime="20221103 17:00:35.811"/>
+</kw>
+<kw name="Fill in password" library="loginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="SignInPassword"]</arg>
+<arg>test123</arg>
+<arg>true</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:35.812" level="INFO">Typing text 'test123' into text field '//*[@id="SignInPassword"]'.</msg>
+<status status="PASS" starttime="20221103 17:00:35.811" endtime="20221103 17:00:35.928"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:35.811" endtime="20221103 17:00:35.928"/>
+</kw>
+<kw name="Click on Login Button" library="loginPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:35.929" level="INFO">Clicking element 'xpath://*[@id="SignInButtonComplete"]'.</msg>
+<status status="PASS" starttime="20221103 17:00:35.928" endtime="20221103 17:00:36.008"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:35.928" endtime="20221103 17:00:36.008"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://*[@id="OrdersPageButton"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:00:36.009" endtime="20221103 17:00:36.470"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="OrdersPageButton"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221103 17:00:36.479" level="INFO">Current page contains element 'xpath://*[@id="OrdersPageButton"]'.</msg>
+<status status="PASS" starttime="20221103 17:00:36.470" endtime="20221103 17:00:36.479"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221103 17:00:41.493" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221103 17:00:36.479" endtime="20221103 17:00:41.493"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:33.323" endtime="20221103 17:00:41.493"/>
+</kw>
+<kw name="click on profile button" library="authorizedHomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PROFILE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:41.494" level="INFO">Clicking element 'xpath://html/body/div[1]/div/div[2]/header/div[4]/a[2]'.</msg>
+<status status="PASS" starttime="20221103 17:00:41.494" endtime="20221103 17:00:41.575"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PROFILE_PAGE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:00:41.575" endtime="20221103 17:00:41.607"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${PROFILE_PAGE}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221103 17:00:41.615" level="INFO">Current page contains element 'xpath://*[@id="SignIn"]/div[1]/p'.</msg>
+<status status="PASS" starttime="20221103 17:00:41.607" endtime="20221103 17:00:41.616"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:41.494" endtime="20221103 17:00:41.616"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:27.209" endtime="20221103 17:00:41.617"/>
+</test>
+<test id="s1-t2" name="Test cancel payment" line="19">
+<kw name="cancel payment" library="authorizedHomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ADD_CREDIT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:41.620" level="INFO">Clicking element 'xpath://*[@id="SignIn"]/div[3]/button'.</msg>
+<status status="PASS" starttime="20221103 17:00:41.619" endtime="20221103 17:00:41.673"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BUY_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:00:41.673" endtime="20221103 17:00:41.706"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CANCEL_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:41.707" level="INFO">Clicking element 'xpath://*[@id="SignIn"]/div[3]/div[2]/div/form/div/a'.</msg>
+<status status="PASS" starttime="20221103 17:00:41.706" endtime="20221103 17:00:41.760"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221103 17:00:46.774" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221103 17:00:41.760" endtime="20221103 17:00:46.774"/>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<arg>${BUY_BUTTON}</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20221103 17:00:46.804" level="INFO">Current page does not contain text 'xpath://*[@id="SignIn"]/div[3]/div[2]/div/form/button'.</msg>
+<status status="PASS" starttime="20221103 17:00:46.774" endtime="20221103 17:00:46.804"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:41.619" endtime="20221103 17:00:46.804"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:41.618" endtime="20221103 17:00:46.805"/>
+</test>
+<test id="s1-t3" name="Test click on MyMovies" line="22">
+<kw name="Go To homePage" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOMEPAGE}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221103 17:00:46.808" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221103 17:00:46.808" endtime="20221103 17:00:46.831"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221103 17:00:52.838" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20221103 17:00:46.832" endtime="20221103 17:00:52.838"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:46.808" endtime="20221103 17:00:52.838"/>
+</kw>
+<kw name="click on MyMovies" library="authorizedHomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MOVIE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:00:52.839" level="INFO">Clicking element 'xpath://*[@id="nav"]/div[4]/a[1]'.</msg>
+<status status="PASS" starttime="20221103 17:00:52.839" endtime="20221103 17:00:52.916"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MOVIE_PAGE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:00:52.917" endtime="20221103 17:00:52.946"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${MOVIE_PAGE}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221103 17:00:52.954" level="INFO">Current page contains element 'xpath://*[@id="root"]/div/div[2]/div[3]/div/div/div[1]/p'.</msg>
+<status status="PASS" starttime="20221103 17:00:52.946" endtime="20221103 17:00:52.954"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:52.839" endtime="20221103 17:00:52.954"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:46.807" endtime="20221103 17:00:52.955"/>
+</test>
+<test id="s1-t4" name="Test rent a movie" line="26">
+<kw name="Go To homePage" library="homePage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${HOMEPAGE}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221103 17:00:52.957" level="INFO">Opening url 'https://brightshopapp.herokuapp.com/#/'</msg>
+<status status="PASS" starttime="20221103 17:00:52.957" endtime="20221103 17:00:52.981"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>6s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221103 17:00:58.989" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20221103 17:00:52.981" endtime="20221103 17:00:58.989"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:52.956" endtime="20221103 17:00:58.989"/>
+</kw>
+<kw name="click on movie" library="unautherizedHomePage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221103 17:01:04.006" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221103 17:00:58.990" endtime="20221103 17:01:04.006"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${MOVIE_POSTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:01:04.006" endtime="20221103 17:01:04.032"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MOVIE_POSTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:01:04.032" level="INFO">Clicking element 'xpath://*[@id="551804"]'.</msg>
+<status status="PASS" starttime="20221103 17:01:04.032" endtime="20221103 17:01:04.100"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:58.990" endtime="20221103 17:01:04.100"/>
+</kw>
+<kw name="rent Movie" library="authorizedHomePage">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221103 17:01:09.114" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221103 17:01:04.102" endtime="20221103 17:01:09.114"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RENT_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:01:09.114" endtime="20221103 17:01:09.139"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RENT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:01:09.141" level="INFO">Clicking element 'xpath://*[@id="RentMovieButton"]'.</msg>
+<status status="PASS" starttime="20221103 17:01:09.141" endtime="20221103 17:01:09.175"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${CLOSE}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221103 17:01:09.188" level="INFO">Current page contains element 'xpath://*[@id="CloseModal"]'.</msg>
+<status status="PASS" starttime="20221103 17:01:09.175" endtime="20221103 17:01:09.188"/>
+</kw>
+<status status="PASS" starttime="20221103 17:01:04.101" endtime="20221103 17:01:09.189"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:52.956" endtime="20221103 17:01:09.189"/>
+</test>
+<test id="s1-t5" name="Test click on sign out" line="31">
+<kw name="click on sign out" library="authorizedHomePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGN_OUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221103 17:01:09.192" level="INFO">Clicking element 'xpath://*[@id="SignOutButton"]'.</msg>
+<status status="PASS" starttime="20221103 17:01:09.190" endtime="20221103 17:01:09.290"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221103 17:01:09.290" endtime="20221103 17:01:09.346"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${REGISTER_BUTTON}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221103 17:01:09.455" level="INFO">Current page contains element 'xpath://*[@id="RegisterButton"]'.</msg>
+<status status="PASS" starttime="20221103 17:01:09.347" endtime="20221103 17:01:09.455"/>
+</kw>
+<status status="PASS" starttime="20221103 17:01:09.190" endtime="20221103 17:01:09.455"/>
+</kw>
+<status status="PASS" starttime="20221103 17:01:09.190" endtime="20221103 17:01:09.456"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221103 17:01:09.458" endtime="20221103 17:01:11.778"/>
+</kw>
+<status status="PASS" starttime="20221103 17:00:24.787" endtime="20221103 17:01:11.778"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Authorized">Authorized</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
