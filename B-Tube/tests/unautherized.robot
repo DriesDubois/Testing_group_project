@@ -19,6 +19,10 @@ Test movie opening
     click on movie
     Close browser
 
+logo goes to homepage
+    Open My Website
+    logo goes to homepage
+    Close browser
 
 Search movie
     Open My Website
@@ -36,7 +40,7 @@ login works
     Close browser
 
 
-click on external link
-    Open My Website
-    go to external link
-    Close browser
+#click on external link
+#    Open My Website
+#    go to external link
+#    Close browser
