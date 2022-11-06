@@ -26,9 +26,15 @@ Test login with wrong mailaddress
     Go To homePage
     Unsuccesfull login process with wrong mail
 
+Test login with wrong password
+    Go To homePage
+    Unsuccesfull login process with wrong password
+
 Test login with unregistered mailaddress
     Go To homePage
     Unsuccesfull login process with unregistered mail
+
+
 
 
 

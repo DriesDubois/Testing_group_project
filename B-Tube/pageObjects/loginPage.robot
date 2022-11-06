@@ -26,6 +26,9 @@ Fill in unregistered mail adress
 Fill in password
     Input text  //*[@id="SignInPassword"]  test123  true
 
+Fill in wrong password
+    Input text  //*[@id="SignInPassword"]  blahdieblah  true
+
 Click on Login Button
     Click element  ${LOGIN_BUTTON}
 
@@ -57,4 +60,13 @@ Unsuccesfull login process with unregistered mail
     click on login button
     wait until page contains  This email has not been registered.
     Page Should Contain  This email has not been registered.
+    sleep  5
+
+Unsuccesfull login process with wrong password
+    click on signin button
+    fill in mail adress
+    fill in wrong password
+    click on login button
+    wait until page contains  Email or password incorrect.
+    Page Should Contain  Email or password incorrect.
     sleep  5
