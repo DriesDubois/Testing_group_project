@@ -32,6 +32,8 @@ cancel payment
   click element  ${ADD_CREDIT}
   wait until element is visible  ${BUY_BUTTON}
   click element  ${CANCEL_BUTTON}
+  sleep  5s
+  Page Should Not Contain  ${BUY_BUTTON}
 
 click on MyMovies
   click element  ${MOVIE_BUTTON}
